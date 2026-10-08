@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title></title>
+           <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        div {
+            width: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+        input {
+            width: 240px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 25px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+    </head>
+
+    <body>
+        <center><h1>Academic Conference</h1></center>
+        <div>
+            <form action="/students" method="POST" >
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your Name" name="Name" required minlength="3"><br><br>
+                <label>Institution:</label>
+                <input type ="text" placeholder="Institution'Name" name="In" required><br><br>
+                <label>Email:</label>
+                <input type="email" placeholder="example@gmail.com" name="mail" required pattern="{A-Z,a-z}@gmail.com"><br><br>
+                <label>Conference:</label>
+                <input type="text" placeholder="event name" name="cof"><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
